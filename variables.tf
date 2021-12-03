@@ -9,17 +9,6 @@ variable "organization" {
   default     = null
   description = "Name of the organization"
 }
-variable "visibility" {
-  type        = string
-  default     = "secret"
-  description = "The visibility of the team"
-}
-
-variable "team_id" {
-  type        = string
-  default     = null
-  description = "ID of the team"
-}
 
 variable "organization_membership_id" {
   type        = list(string)

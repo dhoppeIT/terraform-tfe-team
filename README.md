@@ -38,12 +38,13 @@ module "tfe-team" {
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.0 |
+| <a name="requirement_tfe"></a> [tfe](#requirement\_tfe) | >= 0.26.1, < 1.0.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_tfe"></a> [tfe](#provider\_tfe) | n/a |
+| <a name="provider_tfe"></a> [tfe](#provider\_tfe) | >= 0.26.1, < 1.0.0 |
 
 ## Modules
 
@@ -53,9 +54,9 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [tfe_team.default](https://registry.terraform.io/providers/hashicorp/tfe/latest/docs/resources/team) | resource |
 | [tfe_team_organization_member.default](https://registry.terraform.io/providers/hashicorp/tfe/latest/docs/resources/team_organization_member) | resource |
 | [tfe_team_token.default](https://registry.terraform.io/providers/hashicorp/tfe/latest/docs/resources/team_token) | resource |
+| [tfe_team.default](https://registry.terraform.io/providers/hashicorp/tfe/latest/docs/data-sources/team) | data source |
 
 ## Inputs
 
@@ -65,8 +66,6 @@ No modules.
 | <a name="input_name"></a> [name](#input\_name) | Name of the team | `string` | `null` | no |
 | <a name="input_organization"></a> [organization](#input\_organization) | Name of the organization | `string` | `null` | no |
 | <a name="input_organization_membership_id"></a> [organization\_membership\_id](#input\_organization\_membership\_id) | ID of the organization membership | `list(string)` | `[]` | no |
-| <a name="input_team_id"></a> [team\_id](#input\_team\_id) | ID of the team | `string` | `null` | no |
-| <a name="input_visibility"></a> [visibility](#input\_visibility) | The visibility of the team | `string` | `"secret"` | no |
 
 ## Outputs
 
