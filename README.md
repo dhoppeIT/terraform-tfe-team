@@ -63,9 +63,9 @@ No modules.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_force_regenerate"></a> [force\_regenerate](#input\_force\_regenerate) | If set to true, a new token will be generated even if a token already exists | `bool` | `false` | no |
-| <a name="input_name"></a> [name](#input\_name) | Name of the team | `string` | `null` | no |
-| <a name="input_organization"></a> [organization](#input\_organization) | Name of the organization | `string` | `null` | no |
-| <a name="input_organization_membership_id"></a> [organization\_membership\_id](#input\_organization\_membership\_id) | ID of the organization membership | `list(string)` | `[]` | no |
+| <a name="input_name"></a> [name](#input\_name) | Name of the team | `string` | n/a | yes |
+| <a name="input_organization"></a> [organization](#input\_organization) | Name of the organization | `string` | n/a | yes |
+| <a name="input_organization_membership_id"></a> [organization\_membership\_id](#input\_organization\_membership\_id) | ID of the organization membership | `list(string)` | n/a | yes |
 
 ## Outputs
 
