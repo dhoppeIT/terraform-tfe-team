@@ -1,18 +1,15 @@
 variable "name" {
   type        = string
-  default     = null
   description = "Name of the team"
 }
 
 variable "organization" {
   type        = string
-  default     = null
   description = "Name of the organization"
 }
 
 variable "organization_membership_id" {
   type        = list(string)
-  default     = []
   description = "ID of the organization membership"
 }
 
