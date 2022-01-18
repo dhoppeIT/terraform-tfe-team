@@ -5,7 +5,7 @@ tfe_team_organization_member, tfe_team_token).
 
 ## Graph
 
-![Graph](https://github.com/dhoppeIT/terraform-tfe-team/blob/main/rover.png)
+<img alt="Graph" src="https://github.com/dhoppeIT/terraform-tfe-team/blob/main/rover.svg?raw=true" width="100%" height="100%">
 
 ## Usage
 
