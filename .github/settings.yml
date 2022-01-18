@@ -1,7 +1,7 @@
 ---
 repository:
   name: terraform-tfe-team
-  description: Terraform module to manage the Terraform Cloud/Enterprise resource (tfe_team, tfe_team_organization_member, tfe_team_token)
+  description: Terraform module to manage the Terraform Cloud/Enterprise resources (tfe_team, tfe_team_organization_member, tfe_team_token)
   homepage: https://registry.terraform.io/modules/dhoppeIT/team/tfe/latest
   topics: terraform, tfe, team, team-organization-member, team-token
   private: false
