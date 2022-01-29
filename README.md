@@ -12,7 +12,7 @@ tfe_team_organization_member, tfe_team_token).
 Copy and paste into your Terraform configuration, insert the variables and run ```terraform init```:
 
 ```hcl
-module "tfe-organization" {
+module "tfe_organization" {
   source = "dhoppeIT/organization/tfe"
 
   name  = "dhoppeIT"
@@ -23,12 +23,12 @@ module "tfe-organization" {
   ]
 }
 
-module "tfe-team" {
+module "tfe_team" {
   source = "dhoppeIT/team/tfe"
 
   name                       = "owners"
-  organization               = module.tfe-organization.name
-  organization_membership_id = module.tfe-organization.id
+  organization               = module.tfe_organization.name
+  organization_membership_id = module.tfe_organization.id
 }
 ```
 
