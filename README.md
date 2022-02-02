@@ -1,7 +1,10 @@
 # terraform-tfe-team
 
-Terraform module to manage the Terraform Cloud/Enterprise resources (tfe_team,
-tfe_team_organization_member, tfe_team_token).
+Terraform module to manage the following Terraform Cloud/Enterprise resources:
+
+* tfe_team
+* tfe_team_organization_member
+* tfe_team_token
 
 ## Graph
 
@@ -13,7 +16,8 @@ Copy and paste into your Terraform configuration, insert the variables and run `
 
 ```hcl
 module "tfe_organization" {
-  source = "dhoppeIT/organization/tfe"
+  source  = "dhoppeIT/organization/tfe"
+  version = "~> 0.1"
 
   name  = "dhoppeIT"
   email = "terraform@dhoppe.it"
@@ -24,10 +28,12 @@ module "tfe_organization" {
 }
 
 module "tfe_team" {
-  source = "dhoppeIT/team/tfe"
+  source  = "dhoppeIT/team/tfe"
+  version = "~> 0.1"
 
-  name                       = "owners"
-  organization               = module.tfe_organization.name
+  name         = "owners"
+  organization = module.tfe_organization.name
+
   organization_membership_id = module.tfe_organization.id
 }
 ```
@@ -44,7 +50,7 @@ module "tfe_team" {
 
 | Name | Version |
 |------|---------|
-| <a name="provider_tfe"></a> [tfe](#provider\_tfe) | 0.27.1 |
+| <a name="provider_tfe"></a> [tfe](#provider\_tfe) | 0.28.0 |
 
 ## Modules
 
@@ -71,6 +77,7 @@ No modules.
 
 | Name | Description |
 |------|-------------|
+| <a name="output_id"></a> [id](#output\_id) | The ID of the token |
 | <a name="output_token"></a> [token](#output\_token) | The generated token |
 
 <!--- END_TF_DOCS --->
