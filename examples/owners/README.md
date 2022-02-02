@@ -21,6 +21,41 @@ $ terraform apply
 `terraform destroy` when the resources are no longer needed.
 
 <!--- BEGIN_TF_DOCS --->
+## Requirements
+
+| Name | Version |
+|------|---------|
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.0 |
+| <a name="requirement_tfe"></a> [tfe](#requirement\_tfe) | ~> 0.26 |
+
+## Providers
+
+No providers.
+
+## Modules
+
+| Name | Source | Version |
+|------|--------|---------|
+| <a name="module_tfe_organization"></a> [tfe\_organization](#module\_tfe\_organization) | dhoppeIT/organization/tfe | ~> 0.1 |
+| <a name="module_tfe_team"></a> [tfe\_team](#module\_tfe\_team) | dhoppeIT/team/tfe | ~> 0.1 |
+
+## Resources
+
+No resources.
+
+## Inputs
+
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| <a name="input_token"></a> [token](#input\_token) | The token used to authenticate with Terraform Cloud/Enterprise | `string` | `null` | no |
+
+## Outputs
+
+| Name | Description |
+|------|-------------|
+| <a name="output_team_id"></a> [team\_id](#output\_team\_id) | The ID of the token |
+| <a name="output_team_token"></a> [team\_token](#output\_team\_token) | The generated token |
+
 <!--- END_TF_DOCS --->
 
 ## Authors
