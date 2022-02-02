@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.0](https://github.com/dhoppeIT/terraform-tfe-team/compare/v0.1.2...v0.2.0) (2022-02-02)
+
+
+### Features
+
+* Add ID of the token as output ([#23](https://github.com/dhoppeIT/terraform-tfe-team/issues/23)) ([c065a73](https://github.com/dhoppeIT/terraform-tfe-team/commit/c065a73af2a77c3d2107cceda6c0cb0e7b34e28a))
+
 ### [0.1.2](https://github.com/dhoppeIT/terraform-tfe-team/compare/v0.1.1...v0.1.2) (2022-01-31)
 
 
