@@ -1,5 +1,5 @@
 output "team_id" {
-  value       = try(module.tfe_team.id, null)
+  value       = module.tfe_team.id
   description = "The ID of the token"
 }
 
