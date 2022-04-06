@@ -50,7 +50,7 @@ module "tfe_team" {
 
 | Name | Version |
 |------|---------|
-| <a name="provider_tfe"></a> [tfe](#provider\_tfe) | 0.28.1 |
+| <a name="provider_tfe"></a> [tfe](#provider\_tfe) | 0.30.2 |
 
 ## Modules
 
