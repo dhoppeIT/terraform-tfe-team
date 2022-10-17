@@ -55,7 +55,6 @@ No resources.
 |------|-------------|
 | <a name="output_team_id"></a> [team\_id](#output\_team\_id) | The ID of the token |
 | <a name="output_team_token"></a> [team\_token](#output\_team\_token) | The generated token |
-
 <!-- END_TF_DOCS -->
 
 ## Authors

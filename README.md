@@ -50,7 +50,7 @@ module "tfe_team" {
 
 | Name | Version |
 |------|---------|
-| <a name="provider_tfe"></a> [tfe](#provider\_tfe) | 0.30.2 |
+| <a name="provider_tfe"></a> [tfe](#provider\_tfe) | 0.37.0 |
 
 ## Modules
 
@@ -79,7 +79,6 @@ No modules.
 |------|-------------|
 | <a name="output_id"></a> [id](#output\_id) | The ID of the token |
 | <a name="output_token"></a> [token](#output\_token) | The generated token |
-
 <!-- END_TF_DOCS -->
 
 ## Authors
