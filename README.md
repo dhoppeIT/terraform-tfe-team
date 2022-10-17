@@ -38,7 +38,7 @@ module "tfe_team" {
 }
 ```
 
-<!--- BEGIN_TF_DOCS --->
+<!-- BEGIN_TF_DOCS -->
 ## Requirements
 
 | Name | Version |
@@ -80,7 +80,7 @@ No modules.
 | <a name="output_id"></a> [id](#output\_id) | The ID of the token |
 | <a name="output_token"></a> [token](#output\_token) | The generated token |
 
-<!--- END_TF_DOCS --->
+<!-- END_TF_DOCS -->
 
 ## Authors
 
@@ -89,46 +89,3 @@ Created and maintained by [Dennis Hoppe](https://github.com/dhoppeIT/).
 ## License
 
 Apache 2 licensed. See [LICENSE](https://github.com/dhoppeIT/terraform-tfe-team/blob/main/LICENSE) for full details.
-
-<!-- BEGIN_TF_DOCS -->
-## Requirements
-
-| Name | Version |
-|------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.0 |
-| <a name="requirement_tfe"></a> [tfe](#requirement\_tfe) | ~> 0.26 |
-
-## Providers
-
-| Name | Version |
-|------|---------|
-| <a name="provider_tfe"></a> [tfe](#provider\_tfe) | 0.32.1 |
-
-## Modules
-
-No modules.
-
-## Resources
-
-| Name | Type |
-|------|------|
-| [tfe_team_organization_member.default](https://registry.terraform.io/providers/hashicorp/tfe/latest/docs/resources/team_organization_member) | resource |
-| [tfe_team_token.default](https://registry.terraform.io/providers/hashicorp/tfe/latest/docs/resources/team_token) | resource |
-| [tfe_team.default](https://registry.terraform.io/providers/hashicorp/tfe/latest/docs/data-sources/team) | data source |
-
-## Inputs
-
-| Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
-| <a name="input_force_regenerate"></a> [force\_regenerate](#input\_force\_regenerate) | If set to true, a new token will be generated even if a token already exists | `bool` | `false` | no |
-| <a name="input_name"></a> [name](#input\_name) | Name of the team | `string` | n/a | yes |
-| <a name="input_organization"></a> [organization](#input\_organization) | Name of the organization | `string` | n/a | yes |
-| <a name="input_organization_membership_id"></a> [organization\_membership\_id](#input\_organization\_membership\_id) | ID of the organization membership | `list(string)` | n/a | yes |
-
-## Outputs
-
-| Name | Description |
-|------|-------------|
-| <a name="output_id"></a> [id](#output\_id) | The ID of the token |
-| <a name="output_token"></a> [token](#output\_token) | The generated token |
-<!-- END_TF_DOCS -->
